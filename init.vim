@@ -8,7 +8,6 @@ Plug 'posva/vim-vue'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-surround'
@@ -19,15 +18,26 @@ Plug 'mileszs/ack.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'roosta/srcery'
 Plug 'morhetz/gruvbox'
+Plug 'mkitt/tabline.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 " Editor Setup
 set number              " Show the line numbers on the left side.
 set ruler               " Show the line and column numbers of the cursor.
 set cursorline          " 突出显示当前行
-set foldmethod=syntax
 set foldlevelstart=99
 set iskeyword+=-        " Treat dash as part of a word
+let &titlestring = @%   " change tab name format
+set title
+set timeoutlen=1000
+set ttimeoutlen=0
+set nocursorcolumn
+set nocursorline
+set norelativenumber
+syntax sync minlines=256
+
 " Split Setup
 set splitright
 set splitbelow
@@ -39,7 +49,6 @@ set shiftwidth  =2
 set expandtab
 
 " Appearence
-syntax on
 set background=dark
 colorscheme gruvbox
 " set termguicolors

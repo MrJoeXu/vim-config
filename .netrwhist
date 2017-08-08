@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ziyaoxu/Code/valkyrie'
-let g:netrw_dirhist_2='/Users/ziyaoxu/Code/valkyrie/src'
-let g:netrw_dirhist_3='/Users/ziyaoxu/Code/valkyrie/src/vili'
-let g:netrw_dirhist_4='/Users/ziyaoxu/Code/valkyrie/src/vili/src'
-let g:netrw_dirhist_5='/Users/ziyaoxu/Code/valkyrie/src/vili/src/components'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/ziyaoxu/Code/valkyrie/src/infrastructure/development'
+let g:netrw_dirhist_2='/Users/ziyaoxu/Code/valkyrie'
